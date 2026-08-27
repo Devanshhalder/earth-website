@@ -19,6 +19,7 @@ body {
 header {
     background-color: #101936;
     padding: 20px 8%;
+
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -39,6 +40,8 @@ nav a {
     color: white;
     text-decoration: none;
     font-size: 17px;
+
+    transition: color 0.3s ease;
 }
 
 nav a:hover {
@@ -55,9 +58,12 @@ section {
 /* Home Section */
 #home {
     min-height: 80vh;
+
     text-align: center;
+
     display: flex;
     flex-direction: column;
+
     align-items: center;
     justify-content: center;
 }
@@ -69,34 +75,61 @@ section {
 
 #home p {
     max-width: 700px;
+
     font-size: 18px;
+
     margin-bottom: 30px;
+
     color: #d0d7e5;
 }
 
+
+/* Earth Image */
 #home img {
     width: 280px;
     height: 280px;
+
     object-fit: cover;
+
     border-radius: 50%;
+
     margin-bottom: 30px;
+
     box-shadow: 0 0 40px #2196f3;
+
+    transition: transform 0.5s ease;
+}
+
+
+/* Earth Hover Animation */
+#home img:hover {
+    transform: scale(1.1) rotate(10deg);
 }
 
 
 /* Buttons */
 button {
     background-color: #2196f3;
+
     color: white;
+
     border: none;
+
     padding: 12px 25px;
+
     border-radius: 25px;
+
     font-size: 16px;
+
     cursor: pointer;
+
+    transition: 0.3s ease;
 }
 
 button:hover {
     background-color: #1976d2;
+
+    transform: scale(1.05);
 }
 
 
@@ -109,15 +142,21 @@ button:hover {
 #facts h2,
 #contact h2 {
     text-align: center;
+
     font-size: 32px;
+
     margin-bottom: 25px;
+
     color: #4fc3f7;
 }
 
 #about p {
     max-width: 800px;
+
     margin: auto;
+
     margin-bottom: 30px;
+
     text-align: center;
 }
 
@@ -141,14 +180,18 @@ button:hover {
 
 table {
     width: 80%;
+
     max-width: 800px;
+
     margin: auto;
+
     border-collapse: collapse;
 }
 
 th,
 td {
     border: 1px solid #4fc3f7;
+
     padding: 15px;
 }
 
@@ -168,21 +211,28 @@ tr:hover {
 
 form {
     max-width: 500px;
+
     margin: auto;
 }
 
 input,
 textarea {
     width: 100%;
+
     padding: 12px;
+
     margin-top: 5px;
+
     border: none;
+
     border-radius: 5px;
+
     font-size: 16px;
 }
 
 textarea {
     height: 120px;
+
     resize: none;
 }
 
@@ -194,7 +244,9 @@ form button {
 /* Horizontal line */
 hr {
     border: none;
+
     height: 1px;
+
     background-color: #25345f;
 }
 
@@ -202,8 +254,11 @@ hr {
 /* Footer */
 footer {
     text-align: center;
+
     padding: 25px;
+
     background-color: #081020;
+
     color: #aaa;
 }
 
@@ -213,12 +268,15 @@ footer {
 
     header {
         flex-direction: column;
+
         gap: 15px;
     }
 
     nav {
         gap: 12px;
+
         flex-wrap: wrap;
+
         justify-content: center;
     }
 
@@ -238,4 +296,11 @@ footer {
     table {
         width: 100%;
     }
+}
+#home img {
+    transition: transform 0.5s ease;
+}
+
+#home img:hover {
+    transform: scale(1.1) rotate(10deg);
 }
